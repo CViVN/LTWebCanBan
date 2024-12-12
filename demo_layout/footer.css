@@ -1,0 +1,40 @@
+footer {
+    background-color: #ffffff;
+    font-size: 14px;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100%;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  .logo img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .content {
+    margin-left: 20px;
+    margin-right: 0;
+    text-align: right;
+    color: #333;
+  }
+
+  

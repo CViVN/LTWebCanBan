@@ -1,0 +1,64 @@
+﻿CREATE TABLE Khách_hàng
+(
+  Tên VARCHAR(50) NOT NULL,
+  SĐT VARCHAR(10) NOT NULL,
+  Giới_tính VARCHAR(10) NOT NULL,
+  Tuổi INT NOT NULL,
+  PRIMARY KEY (SĐT)
+);
+
+CREATE TABLE Đơn_đặt_phóng
+(
+  Ngày_đến DATE NOT NULL,
+  Ngày_đi DATE NOT NULL,
+  Tổng_giá INT NOT NULL,
+  Số_lượng_người INT NOT NULL,
+  ID_HD VARCHAR(20) NOT NULL,
+  SĐT VARCHAR(10) NOT NULL,
+  PRIMARY KEY (ID_HD),
+  FOREIGN KEY (SĐT) REFERENCES Khách_hàng(SĐT)
+);
+
+CREATE TABLE Phòng
+(
+  ID_Phòng INT NOT NULL,
+  Giá INT NOT NULL,
+  Tên_phòng INT NOT NULL,
+  Tầng INT NOT NULL,
+  PRIMARY KEY (ID_Phòng)
+);
+
+CREATE TABLE tài_khoản
+(
+  SDT INT NOT NULL,
+  Mật_khẩu INT NOT NULL,
+  SĐT VARCHAR(10) NOT NULL,
+  PRIMARY KEY (SDT),
+  FOREIGN KEY (SĐT) REFERENCES Khách_hàng(SĐT)
+);
+
+CREATE TABLE Dịch_vụ
+(
+  ID_DV INT NOT NULL,
+  Tên_dịch_vụ INT NOT NULL,
+  Giá INT NOT NULL,
+  PRIMARY KEY (ID_DV)
+);
+
+CREATE TABLE DM_Dịch_vụ
+(
+  Tổng_giá FLOAT NOT NULL,
+  ID VARCHAR(10) NOT NULL,
+  SĐT VARCHAR(10) NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (SĐT) REFERENCES Khách_hàng(SĐT)
+);
+
+CREATE TABLE Gồm
+(
+  ID_HD VARCHAR(10) NOT NULL,
+  ID_Phòng INT NOT NULL,
+  PRIMARY KEY (ID_HD, ID_Phòng),
+  FOREIGN KEY (ID_HD) REFERENCES Đơn_đặt_phóng(ID_HD),
+  FOREIGN KEY (ID_Phòng) REFERENCES Phòng(ID_Phòng)
+);

@@ -1,0 +1,78 @@
+.navbar-brand img {
+    max-height: 100px; /* set the maximum height of the logo */
+  }
+
+  .navbar-toggler {
+    background-color: rgba(25, 171, 244, 0.897);
+  }
+  .navbar-toggler:hover {
+    border-color: #000;
+  }
+
+  @media screen and (min-width: 768px) {
+      #nav1{
+          padding-left:30px;
+          padding-top:10px;
+      }
+
+      #nav2 {
+          display: flex;
+          flex-direction: column;
+          padding-right:20px;
+      }
+
+      #nav2 .nav-item {
+          margin-bottom: 10px; /* khoảng cách giữa các phần tử */
+      }
+
+      #nav2 .nav-link {
+          width: 100%; /* chiều rộng của cột dọc */
+          text-align: center; /* canh giữa các phần tử */
+      }
+
+      #dangki{
+      padding:10px;
+      background-color: rgba(25, 171, 244, 0.897);
+      border-radius: 5px;
+      color:white;
+      }
+      #dangnhap{
+          padding:10px;
+          background-color:white;
+          border-radius: 5px;
+          border-color:rgba(25, 171, 244, 0.897); 
+          color:rgba(25, 171, 244, 0.897);
+          border:1px solid;
+      }
+      #dangki:hover{
+          padding:10px;
+          background-color:white;
+          border-radius: 5px;
+          border-color:rgba(25, 171, 244, 0.897); 
+          color:rgba(25, 171, 244, 0.897);
+          border:1px solid;
+      }
+
+      #dangnhap:hover{
+      padding:10px;
+      background-color: rgba(25, 171, 244, 0.897);
+      border-radius: 5px;
+      color:white;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+  }

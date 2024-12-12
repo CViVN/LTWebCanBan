@@ -1,0 +1,85 @@
+.btn-custom{
+    background-color: rgba(25, 171, 244, 0.897);
+    color:#fff
+  }
+  .btn-custom:hover{
+    background-color: #fff;
+    color:rgba(25, 171, 244, 0.897);
+    border-radius: 5px;
+    border-color:rgba(25, 171, 244, 0.897); 
+  }
+
+  .carousel-fade .carousel-item {
+    transition-duration: 2s;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+    transition: opacity 2s ease;
+}
+body{
+    background-color:#fff;
+}
+@media screen and (max-width:500px){
+.div1,#hotel,.p1,.div2,#slide2{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.div3{
+  padding-top:30px;
+}
+.card1{
+  padding-top:20px;
+}
+.view1{
+  padding-top:20px;
+}
+
+
+}
+@media screen and (min-width:1224px){
+  .div3{
+    padding-top:150px; 
+    padding-left:250px;
+    padding-right:50px;
+  }
+  .div1{
+    padding-top:300px;
+  }
+  #hotel{
+    padding-left:50px
+
+  }
+  .p1{
+    padding-left:50px;
+    padding-right:150px;
+  }
+  .div2{
+    padding-top:60px;  
+    padding-right:50px;
+  }
+  #slide2{
+    padding-left:50px; padding-top:150px;
+  }
+  #khachsan{
+    text-align: center; 
+    padding-top:50px;
+
+  }
+  #rowks{
+    padding-top:100px;
+  }
+  #view{
+    text-align: center; 
+
+    padding-top:20px;
+  }
+
+
+
+
+
+}
+
+
